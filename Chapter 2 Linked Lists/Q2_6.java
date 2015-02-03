@@ -36,7 +36,7 @@ public class Q2_6 {
      * @return the next node of the sublist and whether the sublist is a palindrome
      */
     public static Result verifyPalindrome(LinkNode n, int length) {
-        if (n == null) {
+        if ((n == null) || (length < 0)) {
             return new Result(null, false);
         }
 
